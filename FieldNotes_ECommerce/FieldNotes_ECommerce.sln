@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes.Core", "FieldNotes.Core\FieldNotes.Core.csproj", "{D4CAECA0-003F-4906-9938-307804CAB33B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes_ECommerce.services", "FieldNotes_ECommerce.services\FieldNotes_ECommerce.services.csproj", "{D5060F28-50A4-453E-B87F-AB068C97FA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes_ECommerce.DataAccess.SQL", "FieldNotes_ECommerce.DataAccess.SQL\FieldNotes_ECommerce.DataAccess.SQL.csproj", "{D0DEF2CA-0170-4069-A354-BEA94A0D0830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes_ECommerce.DataAccess.InMemory", "FieldNotes_ECommerce.DataAccess.InMemory\FieldNotes_ECommerce.DataAccess.InMemory.csproj", "{3B30DE36-913F-40AC-9EBD-1D1FF9AAB726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes_ECommerce.WebUI", "FieldNotes_ECommerce.WebUI\FieldNotes_ECommerce.WebUI.csproj", "{D9208A43-411F-4492-B396-48DB470F4BAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldNotes_ECommerce.WebUI.Tests", "FieldNotes_ECommerce.WebUI.Tests\FieldNotes_ECommerce.WebUI.Tests.csproj", "{8DC46E97-46A6-4E3E-AC7D-BB5FD2F2CA62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4CAECA0-003F-4906-9938-307804CAB33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CAECA0-003F-4906-9938-307804CAB33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CAECA0-003F-4906-9938-307804CAB33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CAECA0-003F-4906-9938-307804CAB33B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5060F28-50A4-453E-B87F-AB068C97FA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5060F28-50A4-453E-B87F-AB068C97FA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5060F28-50A4-453E-B87F-AB068C97FA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5060F28-50A4-453E-B87F-AB068C97FA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DEF2CA-0170-4069-A354-BEA94A0D0830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DEF2CA-0170-4069-A354-BEA94A0D0830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DEF2CA-0170-4069-A354-BEA94A0D0830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DEF2CA-0170-4069-A354-BEA94A0D0830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B30DE36-913F-40AC-9EBD-1D1FF9AAB726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B30DE36-913F-40AC-9EBD-1D1FF9AAB726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B30DE36-913F-40AC-9EBD-1D1FF9AAB726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B30DE36-913F-40AC-9EBD-1D1FF9AAB726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9208A43-411F-4492-B396-48DB470F4BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9208A43-411F-4492-B396-48DB470F4BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9208A43-411F-4492-B396-48DB470F4BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9208A43-411F-4492-B396-48DB470F4BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC46E97-46A6-4E3E-AC7D-BB5FD2F2CA62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC46E97-46A6-4E3E-AC7D-BB5FD2F2CA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC46E97-46A6-4E3E-AC7D-BB5FD2F2CA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC46E97-46A6-4E3E-AC7D-BB5FD2F2CA62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E49CC60A-DF08-4414-A5CF-9725F1229677}
+	EndGlobalSection
+EndGlobal
