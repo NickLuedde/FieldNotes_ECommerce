@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -343,6 +344,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -357,6 +362,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FieldNotes.Core\FieldNotes.Core.csproj">
+      <Project>{d4caeca0-003f-4906-9938-307804cab33b}</Project>
+      <Name>FieldNotes.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FieldNotes_ECommerce.DataAccess.InMemory\FieldNotes_ECommerce.DataAccess.InMemory.csproj">
+      <Project>{3b30de36-913f-40ac-9ebd-1d1ff9aab726}</Project>
+      <Name>FieldNotes_ECommerce.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FieldNotes_ECommerce.DataAccess.SQL\FieldNotes_ECommerce.DataAccess.SQL.csproj">
+      <Project>{d0def2ca-0170-4069-a354-bea94a0d0830}</Project>
+      <Name>FieldNotes_ECommerce.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FieldNotes_ECommerce.services\FieldNotes_ECommerce.services.csproj">
+      <Project>{d5060f28-50a4-453e-b87f-ab068c97fa0d}</Project>
+      <Name>FieldNotes_ECommerce.services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
