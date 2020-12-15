@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace FieldNotes.Core.Models
 {
-    public class Product
+    public class Product : BaseEmptyClass
     {
-        public string Id { get; set; }
-        
+      
         [StringLength(30)]
         [System.ComponentModel.DisplayName("Product Name")]
         public string Name { get; set; }
@@ -22,10 +21,7 @@ namespace FieldNotes.Core.Models
         public string Category { get; set; }
         public string Image { get; set; }
 
-        public Product ()
-        {
-            this.Id = Guid.NewGuid().ToString();
-        }
+       
 
 
 

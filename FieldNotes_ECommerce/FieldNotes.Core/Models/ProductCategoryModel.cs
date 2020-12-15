@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace FieldNotes.Core.Models
 {
-    public class ProductCategory
+    public class ProductCategory : BaseEmptyClass
     {
 
-    public string Id { get; set; }
+  
     public string Category { get; set; }
 
 
-    public ProductCategory()
-        {
-            this.Id = Guid.NewGuid().ToString();
-        }
+   
 
        
 

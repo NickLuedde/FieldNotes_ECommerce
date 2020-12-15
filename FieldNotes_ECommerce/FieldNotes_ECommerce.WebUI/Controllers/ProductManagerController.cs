@@ -12,16 +12,16 @@ namespace FieldNotes_ECommerce.WebUI.Controllers
     public class ProductManagerController : Controller
     {
 
-        ProductRepository context;
+        InMemoryRepository<Product> context;
+        InMemoryRepository<ProductCategory> productCategories;
 
-        ProductCategoryRepository productCategories;
 
 
         public ProductManagerController()
         {
-            context = new ProductRepository();
+            context = new InMemoryRepository<Product>();
 
-            productCategories = new ProductCategoryRepository();
+            productCategories = new InMemoryRepository<ProductCategory>();
         }
 
 
