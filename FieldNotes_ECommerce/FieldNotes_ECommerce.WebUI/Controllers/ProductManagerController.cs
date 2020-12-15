@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using FieldNotes.Core.Models;
+using FieldNotes.Core.ViewModels;
 using FieldNotes_ECommerce.DataAccess.InMemory;
 
 namespace FieldNotes_ECommerce.WebUI.Controllers
@@ -13,9 +14,14 @@ namespace FieldNotes_ECommerce.WebUI.Controllers
 
         ProductRepository context;
 
+        ProductCategoryRepository productCategories;
+
+
         public ProductManagerController()
         {
             context = new ProductRepository();
+
+            productCategories = new ProductCategoryRepository();
         }
 
 
@@ -30,8 +36,13 @@ namespace FieldNotes_ECommerce.WebUI.Controllers
         //Displays the page
         public ActionResult Create()
         {
-            Product product = new Product();
-            return View(product);
+
+            ProductManagerViewModel viewModel = new ProductManagerViewModel();
+
+            viewModel.ProductCategories = productCategories.Collection();
+
+         
+            return View(viewModel);
         }
 
         //Post the details of the Create Page
@@ -63,7 +74,12 @@ namespace FieldNotes_ECommerce.WebUI.Controllers
 
             } else
             {
-                return View(product);
+                ProductManagerViewModel viewModel = new ProductManagerViewModel();
+                viewModel.Product = product;
+                viewModel.ProductCategories = productCategories.Collection();
+                return View(viewModel);
+
+               
             }
 
         }
