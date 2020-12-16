@@ -1,4 +1,5 @@
-﻿using FieldNotes.Core.Models;
+﻿using FieldNotes.Core.Contracts;
+using FieldNotes.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Runtime.Caching;
 
 namespace FieldNotes_ECommerce.DataAccess.InMemory
 {
-    public class InMemoryRepository<T> where T : BaseEmptyClass
+    public class InMemoryRepository<T> : IRepository<T> where T : BaseEmptyClass
     {
         ObjectCache cache = MemoryCache.Default;
 
@@ -20,24 +21,24 @@ namespace FieldNotes_ECommerce.DataAccess.InMemory
             className = typeof(T).Name;
             items = cache[className] as List<T>;
 
-            if(items == null)
+            if (items == null)
             {
                 items = new List<T>();
-            } 
+            }
 
         }
 
-        public void Comit ()
+        public void Comit()
         {
             cache[className] = items;
         }
 
-        public void Insert (T t)
+        public void Insert(T t)
         {
             items.Add(t);
         }
 
-        public void Update (T t)
+        public void Update(T t)
         {
             T tToUpdate = items.Find(i => i.Id == t.Id);
 
@@ -67,7 +68,8 @@ namespace FieldNotes_ECommerce.DataAccess.InMemory
             }
         }
 
-        public IQueryable<T> Collection() {
+        public IQueryable<T> Collection()
+        {
             return items.AsQueryable();
         }
 

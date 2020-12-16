@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using FieldNotes.Core.Contracts;
 using FieldNotes.Core.Models;
 using FieldNotes_ECommerce.DataAccess.InMemory;
 
@@ -11,11 +12,11 @@ namespace FieldNotes_ECommerce.WebUI.Controllers
     public class ProductCategoryManagerController : Controller
     {
 
-        InMemoryRepository<ProductCategory> context;
+        IRepository<ProductCategory> context;
 
-        public ProductCategoryManagerController()
+        public ProductCategoryManagerController(IRepository<ProductCategory> context)
         {
-            context = new InMemoryRepository<ProductCategory>();
+            this.context = context;
         }
 
 
