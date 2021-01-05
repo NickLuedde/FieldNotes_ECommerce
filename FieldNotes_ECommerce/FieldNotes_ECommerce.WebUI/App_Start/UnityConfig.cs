@@ -1,6 +1,7 @@
 using FieldNotes.Core.Contracts;
 using FieldNotes.Core.Models;
 using FieldNotes_ECommerce.DataAccess.InMemory;
+using FieldNotes_ECommerce.DataAccess.SQL;
 using System;
 
 using Unity;
@@ -46,8 +47,8 @@ namespace FieldNotes_ECommerce.WebUI
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterType<IRepository<Product>, InMemoryRepository<Product>>();
-            container.RegisterType<IRepository<ProductCategory>, InMemoryRepository<ProductCategory>>();
+            container.RegisterType<IRepository<Product>, SQLRepository<Product>>();
+            container.RegisterType<IRepository<ProductCategory>, SQLRepository<ProductCategory>>();
 
         }
     }
